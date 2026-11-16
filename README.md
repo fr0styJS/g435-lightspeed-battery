@@ -87,6 +87,11 @@ PA commands are only serviced by the bridge's **bootloader** firmware. Entering 
 ## Usage
 
 ```bash
+git clone https://github.com/fr0styJS/g435-lightspeed-battery
+cd g435-lightspeed-battery
+```
+
+```bash
 python g435_battery.py              # 55%  (3831 mV)  [0.83s]
 python g435_battery.py --json       # {"mv": 3837, "percent": 56, "seconds": 0.84}
 python g435_battery.py --noboot     # diagnostics: expects "no battery reply"
